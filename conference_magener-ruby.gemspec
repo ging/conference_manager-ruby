@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name = "conference_manager-ruby"
-	s.version = "0.0.1"
+	s.version = "0.0.2"
 	s.authors = ["GING-UPM"]
 	s.summary = "Ruby wrapping for Conference Manager."
 	s.description = "Ruby wrapping for Conference Manager."
