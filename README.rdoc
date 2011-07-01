@@ -1,16 +1,26 @@
 = ConferenceManager Ruby Wrapping
 
-TODO
+A ruby gem to wrap the ConferenceManager functionality
 
 
 = Installation
 
-TODO
+Add to your Gemfile:
 
-= Requirements
+  gem 'conference_manager-ruby'
+  
+Then run:
 
-TODO
-
+  bundle update
+  
 = Usage
 
-TODO
+In your model:
+
+  class Event < ActiveRecord::Base      
+    acts_as_conference_manager_event
+  end
+  
+  class Session < ActiveRecord::Base      
+    acts_as_conference_manager_session
+  end
