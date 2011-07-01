@@ -1,6 +1,6 @@
 module ConferenceManager
   module Models
-    module ConferenceMangerSession
+    module ConferenceManagerSession
       CM_ATTRIBUTES = ["title", "cm_streaming", "cm_recording", "start_time", "end_time"]
       PAST_UNCHANGEABLE_ATTRIBUTES = ["cm_streaming", "cm_recording", "start_time", "end_time"]
       CURRENT_UNCHANGEABLE_ATTRIBUTES = ["cm_streaming", "cm_recording", "start_time"]
@@ -13,7 +13,7 @@ module ConferenceManager
 
       module ClassMethods
         def acts_as_conference_manager_session
-          include ConferenceManager::Models::ConferenceMangerSession::InstanceMethods
+          include ConferenceManager::Models::ConferenceManagerSession::InstanceMethods
         end
 
         def included(base)

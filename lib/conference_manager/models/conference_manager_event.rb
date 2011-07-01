@@ -1,6 +1,6 @@
 module ConferenceManager
   module Models
-    module ConferenceMangerEvent
+    module ConferenceManagerEvent
       CM_ATTRIBUTES = ["name", "cm_mode", "start_date", "end_date", "web_bw", "isabel_bw", "sip_interface", "httplivestreaming_bw", "permalink"]
       #in these arrays the number in kb is lower than in the comments because we pass the conference manager interface
       #only the video bandwidth, and the total is about 50kb lower
@@ -17,8 +17,7 @@ module ConferenceManager
       end
       module ClassMethods
         def acts_as_conference_manager_event
-
-          include ConferenceManager::Models::ConferenceMangerEvent::InstanceMethods
+          include ConferenceManager::Models::ConferenceManagerEvent::InstanceMethods
         end
 
         def included(base)
