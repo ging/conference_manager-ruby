@@ -2,7 +2,7 @@ module ConferenceManager
   class Resource < ActiveResource::Base
     class << self
       def domain
-        Site.current.cm_domain.present? ? Site.current.cm_domain : "http://vcc-test.dit.upm.es:8080"
+        "http://vcc-test.dit.upm.es:8080"
       end
       
       def subclasses
